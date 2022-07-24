@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 int plus_moins(int choix_joueur, int valeur_a_trouver)
 {
@@ -26,9 +27,16 @@ int main()
     int valeur_a_trouver;
     int choix_joueur;
     
-    printf("Inserez une valeur a deviner: ");
-    scanf("%d",&valeur_a_trouver);
-    printf("Essayez de deviner la valeur inserrez: ");
+    valeur_a_trouver = rand() % 100 + 1;
+    printf("Essayez de deviner la valeur: ");
     scanf("%d",&choix_joueur);
     plus_moins(choix_joueur, valeur_a_trouver);
+    
+    while(choix_joueur != valeur_a_trouver)
+    {
+        printf("Essayez de deviner la valeur: ");
+        scanf("%d",&choix_joueur);
+        plus_moins(choix_joueur, valeur_a_trouver);
+    }
+    
 }
