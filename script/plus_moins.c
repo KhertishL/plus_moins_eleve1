@@ -92,7 +92,7 @@ int main()
     {
         printf("\n");
         printf("\nPartie %d",i);
-        printf("\nJoueur 1, Inserez le nombre d'essaies pour Joueur 2 : ");
+        printf("\nJoueur 1, Inserez le nombre d'essaies pour Joueur 2(plus de 10): ");
         scanf("%d",&player2_point);
         printf("\nLe score de Joueur 2 est maintenant : %d", player2_point);//setting score and tries for player2
 
@@ -127,7 +127,7 @@ int main()
 
         }
 
-        printf("\nJoueur 2, Inserez le nombre d'essaies pour Joueur 1 : ");
+        printf("\nJoueur 2, Inserez le nombre d'essaies pour Joueur 1(plus de 10): ");
         scanf("%d",&player1_point);
         printf("\nLe score de Joueur 1 est maintenant : %d ", player1_point);//setting score and tries for player1
 
